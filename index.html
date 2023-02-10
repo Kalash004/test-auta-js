@@ -11,56 +11,60 @@
 </head>
 
 <body>
-    <section class="d-flex p-2" id="navbar">
+    <section id="navbar">
         <h1 id="name">
             Auto Service
         </h1>
-        <ul>
+        <ul id="buttns">
             <button id="pridat_bttn" onclick="showForm()">Pridat Auto</button>
             <button id="smazat_bttn" onclick="showRemove()">Smazat Auto</button>
         </ul>
     </section>
-    <section id="forms" style="display: none;">
+    <section id="forms">
         <form id="form">
             <ul>
                 <li>
                     <label for="model">Model: </label>
-                    <input type="text" name="model" id="model">
+                    <input type="text" name="model" id="model" required>
                 </li>
                 <li>
                     <label for="brand">Brand: </label>
-                    <input type="text" name="brand" id="brand">
+                    <input type="text" name="brand" id="brand" required>
                 </li>
                 <li>
                     <label for="km">Ujete Km: </label>
-                    <input type="text" name="km" id="km">
+                    <input type="text" name="km" id="km" required>
                 </li>
                 <li>
                     <label for="year">Rok vyroby: </label>
-                    <input type="date" name="year" id="year">
+                    <input type="date" name="year" id="year" required>
                 </li>
             </ul>
             <button type="submit">Send Form</button>
-            <button onclick="hideForm(value)" value="forms">Hide</button>
+            <button onclick="hideForm()" id="hidder">Hide</button>
         </form>
     </section>
 
-    <section id="remove" style="display: none;">
+    <section id="remove">
         <form id="form_remove">
             <ul>
                 <li>
                     <label for="model">Model: </label>
-                    <input type="text" name="model" id="model">
+                    <input type="text" name="model" id="model" required>
                 </li>
             </ul>
             <button type="submit">Remove</button>
-            <button onclick="hideForm(value)" value="remove">Hide</button>
+            <button onclick="hideRemove()" id="remover">Hide</button>
 
         </form>
 
     </section>
-    <section id="cars">
-
+    <section>
+        <hr>
+    </section>
+    <section  id="cars_over">
+        <div id="cars" >
+        </div>
     </section>
 
     <section>

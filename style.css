@@ -63,3 +63,30 @@ form {
        between the labels and their text fields */
     margin-left: 0.5em;
   }
+
+  #navbar {
+    width: 100%;
+    float: left;
+  }
+
+  #buttns {
+    float: right;
+  }
+
+  button {
+    background-color: wheat;
+    border-radius: 10px;
+    border: 1px black solid;
+  }
+
+  #cars-over {
+    height: 900px;
+  }
+
+  #cars {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+
+  }
